@@ -1,6 +1,8 @@
 <div class="providerLinkingFeedback"></div>
 
+{*<form method="post" action="http://localhost/SolidServ-WebSite/api/connect.php" class="login-form" role="form">*}
 <form method="post" action="{routePath('login-validate')}" class="login-form" role="form">
+    <input type="hidden" name="action" value="{routePath('login-validate')}">
     <div class="card mw-540 mb-md-4 mt-md-4">
         <div class="card-body px-sm-5 py-5">
             <div class="mb-4">

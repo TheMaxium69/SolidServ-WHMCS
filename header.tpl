@@ -9,143 +9,47 @@
     {$headoutput}
 </head>
 <body class="primary-bg-color" data-phone-cc-input="{$phoneNumberInputStyle}">
+<style>
+#main-body{
+    background: white;
+}
+</style>
 
     {$headeroutput}
 
     <header id="header" class="header">
-        {if $loggedin}
-            <div class="topbar">
-                <div class="container">
-                    <div class="d-flex">
-                        <div class="mr-auto">
-                            <button type="button" class="btn" data-toggle="popover" id="accountNotifications" data-placement="bottom">
-                                <i class="far fa-flag"></i>
-                                {if count($clientAlerts) > 0}
-                                    {count($clientAlerts)}
-                                    <span class="d-none d-sm-inline">{lang key='notifications'}</span>
-                                {else}
-                                    <span class="d-sm-none">0</span>
-                                    <span class="d-none d-sm-inline">{lang key='nonotifications'}</span>
-                                {/if}
-                            </button>
-                            <div id="accountNotificationsContent" class="w-hidden">
-                                <ul class="client-alerts">
-                                {foreach $clientAlerts as $alert}
-                                    <li>
-                                        <a href="{$alert->getLink()}">
-                                            <i class="fas fa-fw fa-{if $alert->getSeverity() == 'danger'}exclamation-circle{elseif $alert->getSeverity() == 'warning'}exclamation-triangle{elseif $alert->getSeverity() == 'info'}info-circle{else}check-circle{/if}"></i>
-                                            <div class="message">{$alert->getMessage()}</div>
-                                        </a>
-                                    </li>
-                                {foreachelse}
-                                    <li class="none">
-                                        {lang key='notificationsnone'}
-                                    </li>
-                                {/foreach}
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="ml-auto">
-                            <div class="input-group active-client" role="group">
-                                <div class="input-group-prepend d-none d-md-inline">
-                                    <span class="input-group-text">{lang key='loggedInAs'}:</span>
-                                </div>
-                                <div class="btn-group">
-                                    <a href="{$WEB_ROOT}/clientarea.php?action=details" class="btn btn-active-client">
-                                        <span>
-                                            {if $client.companyname}
-                                                {$client.companyname}
-                                            {else}
-                                                {$client.fullName}
-                                            {/if}
-                                        </span>
-                                    </a>
-                                    <a href="{routePath('user-accounts')}" class="btn" data-toggle="tooltip" data-placement="bottom" title="Switch Account">
-                                        <i class="fad fa-random"></i>
-                                    </a>
-                                    {if $adminMasqueradingAsClient || $adminLoggedIn}
-                                        <a href="{$WEB_ROOT}/logout.php?returntoadmin=1" class="btn btn-return-to-admin" data-toggle="tooltip" data-placement="bottom" title="{if $adminMasqueradingAsClient}{lang key='adminmasqueradingasclient'} {lang key='logoutandreturntoadminarea'}{else}{lang key='adminloggedin'} {lang key='returntoadminarea'}{/if}">
-                                            <i class="fas fa-redo-alt"></i>
-                                            <span class="d-none d-md-inline-block">{lang key="admin.returnToAdmin"}</span>
-                                        </a>
-                                    {/if}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        {/if}
-
-        <div class="navbar navbar-light">
-            <div class="container">
-                <a class="navbar-brand mr-3" href="{$WEB_ROOT}/index.php">
-                    {if $assetLogoPath}
-                        <img src="{$assetLogoPath}" alt="{$companyname}" class="logo-img">
-                    {else}
-                        {$companyname}
-                    {/if}
-                </a>
-
-                <form method="post" action="{routePath('knowledgebase-search')}" class="form-inline ml-auto">
-                    <div class="input-group search d-none d-xl-flex">
-                        <div class="input-group-prepend">
-                            <button class="btn btn-default" type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                        <input class="form-control appended-form-control font-weight-light" type="text" name="search" placeholder="{lang key="searchOurKnowledgebase"}...">
-                    </div>
-                </form>
-
-                <ul class="navbar-nav toolbar">
-                    <li class="nav-item ml-3">
-                        <a class="btn nav-link cart-btn" href="{$WEB_ROOT}/cart.php?a=view">
-                            <i class="far fa-shopping-cart fa-fw"></i>
-                            <span class="badge badge-info">{$cartitemcount}</span>
-                            <span class="sr-only">{lang key="carttitle"}</span>
+        <header id="nav-desktop">
+            <div class="clear"></div>
+            <nav class="fixed-header">
+                <div class="site-title visible-title"><a href="http://localhost/SolidServ-WebSite/"><img class="logo" src="http://localhost/SolidServ-WebSite/assets/LogoBrute.png"><img class="text" src="http://localhost/SolidServ-WebSite/assets/TextBrute.png"></a></div>
+                <ul class="">
+                    <li class=""><a href="http://localhost/SolidServ-WebSite/">Accueil</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Hébergement
                         </a>
-                    </li>
-                    <li class="nav-item ml-3 d-xl-none">
-                        <button class="btn nav-link" type="button" data-toggle="collapse" data-target="#mainNavbar">
-                            <span class="fas fa-bars fa-fw"></span>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="navbar navbar-expand-xl main-navbar-wrapper">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="mainNavbar">
-                    <form method="post" action="{routePath('knowledgebase-search')}" class="d-xl-none">
-                        <div class="input-group search w-100 mb-2">
-                            <div class="input-group-prepend">
-                                <button class="btn btn-default" type="submit">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                            <input class="form-control prepended-form-control" type="text" name="search" placeholder="{lang key="searchOurKnowledgebase"}...">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost/SolidServ-WebSite/vps.php">VPS</a>
+                            <a class="dropdown-item" href="http://localhost/SolidServ-WebSite/siteweb.php">Site Web</a>
+                            <a class="dropdown-item" href="http://localhost/SolidServ-WebSite/minecraft.php">Minecraft</a>
+                            <a class="dropdown-item" href="http://localhost/SolidServ-WebSite/fivem.php">Five M</a>
+                            <a class="dropdown-item" href="http://localhost/SolidServ-WebSite/stockage.php">Stockage</a>
                         </div>
-                    </form>
-                    <ul id="nav" class="navbar-nav mr-auto">
-                        {include file="$template/includes/navbar.tpl" navbar=$primaryNavbar}
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        {include file="$template/includes/navbar.tpl" navbar=$secondaryNavbar rightDrop=true}
-                    </ul>
-                </div>
-            </div>
-        </div>
+                    </li>
+                    <li><a href="http://localhost/SolidServ-WebSite/actu.php">Actualité</a></li><li><a href="http://localhost/SolidServ-WebSite/support.php">Support</a></li><li id="li-espace" class="null"><a class="a-espace" href="login.php">Espace client</a></li><li class="null"><a class="a-shop" href="cart.php?a=view"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
     </header>
 
     {include file="$template/includes/network-issues-notifications.tpl"}
 
-    <nav class="master-breadcrumb" aria-label="breadcrumb">
+    {*<nav class="master-breadcrumb" aria-label="breadcrumb">
         <div class="container">
             {include file="$template/includes/breadcrumb.tpl"}
         </div>
-    </nav>
+    </nav>*}
 
     {include file="$template/includes/validateuser.tpl"}
     {include file="$template/includes/verifyemail.tpl"}

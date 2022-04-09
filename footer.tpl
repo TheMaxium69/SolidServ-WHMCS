@@ -11,7 +11,48 @@
         </div>
     </section>
 
-    <footer id="footer" class="footer">
+                    <footer class="footer-07">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 text-center">
+                                    <h2 class="footer-heading"><a href="#" class="logo"><img style="width: 134px;" src="http://localhost/SolidServ-WebSite/assets/SolidServ.png"></a></h2>
+                                    <ul class="menu">
+                                        <li class="li-page"><a href="./">Accueil</a></li><li class="li-page li-drop">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Hébergement                                </a>
+
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <a class="dropdown-item" href="vps.php">VPS</a>
+                                                    <a class="dropdown-item" href="siteweb.php">Site Web</a>
+                                                    <a class="dropdown-item" href="minecraft.php">Minecraft</a>
+                                                    <a class="dropdown-item" href="fivem.php">Five M</a>
+                                                    <a class="dropdown-item" href="stockage.php">Stockage</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="li-page"><a href="actu.php">Actualité</a></li><li class="li-page"><a href="support.php">Support</a></li><li class="li-page"><a href="http://localhost/whmcs/whmcs-8.2.1/whmcs-8.2.1/login">Espace client</a></li><li class="li-page"><a href="http://localhost/whmcs/whmcs-8.2.1/whmcs-8.2.1/cart.php?a=view"><i class="fas fa-shopping-cart"></i></a></li>
+
+                                    </ul>
+                                    <ul class="ftco-footer-social p-0">
+                                        <li class="ftco-animate"><a href="https://www.instagram.com/solidserv/" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                        <li class="ftco-animate"><a href="https://twitter.com/solid_serv" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="ftco-animate"><a href="https://www.linkedin.com/company/solidserv" data-toggle="tooltip" data-placement="top" title="Linkdin"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-md-12 text-center">
+                                    <p class="copyright">
+                                        Copyright &copy;2022 All rights reserved | This projet is made with by <a href="https://tyrolium.fr" target="_blank">Tyrolium</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+    {*<footer id="footer" class="footer">
         <div class="container">
             <ul class="list-inline mb-7 text-center float-lg-right">
                 {include file="$template/includes/social-accounts.tpl"}
@@ -48,7 +89,7 @@
                 {lang key="copyrightFooterNotice" year=$date_year company=$companyname}
             </p>
         </div>
-    </footer>
+    </footer>*}
 
     <div id="fullpage-overlay" class="w-hidden">
         <div class="outer-wrapper">

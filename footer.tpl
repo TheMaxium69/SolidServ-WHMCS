@@ -15,24 +15,24 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-md-12 text-center">
-                                    <h2 class="footer-heading"><a href="#" class="logo"><img style="width: 134px;" src="http://localhost/SolidServ-WebSite/assets/SolidServ.png"></a></h2>
+                                    <h2 class="footer-heading"><a href="#" class="logo"><img style="width: 134px;" src="../assets/SolidServ.png"></a></h2>
                                     <ul class="menu">
-                                        <li class="li-page"><a href="./">Accueil</a></li><li class="li-page li-drop">
+                                        <li class="li-page"><a href="../">Accueil</a></li><li class="li-page li-drop">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     Hébergement                                </a>
 
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <a class="dropdown-item" href="vps.php">VPS</a>
-                                                    <a class="dropdown-item" href="siteweb.php">Site Web</a>
-                                                    <a class="dropdown-item" href="minecraft.php">Minecraft</a>
-                                                    <a class="dropdown-item" href="fivem.php">Five M</a>
-                                                    <a class="dropdown-item" href="stockage.php">Stockage</a>
+                                                    <a class="dropdown-item" href="../vps.php">VPS</a>
+                                                    <a class="dropdown-item" href="../siteweb.php">Site Web</a>
+                                                    <a class="dropdown-item" href="../minecraft.php">Minecraft</a>
+                                                    <a class="dropdown-item" href="../fivem.php">Five M</a>
+                                                    <a class="dropdown-item" href="../stockage.php">Stockage</a>
                                                 </div>
                                             </div>
                                         </li>
 
-                                        <li class="li-page"><a href="actu.php">Actualité</a></li><li class="li-page"><a href="support.php">Support</a></li><li class="li-page"><a href="http://localhost/whmcs/whmcs-8.2.1/whmcs-8.2.1/login">Espace client</a></li><li class="li-page"><a href="http://localhost/whmcs/whmcs-8.2.1/whmcs-8.2.1/cart.php?a=view"><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li class="li-page"><a href="../actu.php">Actualité</a></li><li class="li-page"><a href="../support.php">Support</a></li><li class="li-page"><a href="login">Espace client</a></li><li class="li-page"><a href="cart.php?a=view"><i class="fas fa-shopping-cart"></i></a></li>
 
                                     </ul>
                                     <ul class="ftco-footer-social p-0">

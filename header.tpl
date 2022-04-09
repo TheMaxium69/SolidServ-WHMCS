@@ -9,6 +9,7 @@
     {$headoutput}
 </head>
 <body class="primary-bg-color" data-phone-cc-input="{$phoneNumberInputStyle}">
+
 <style>
 #main-body{
     background: white;
@@ -21,22 +22,22 @@
         <header id="nav-desktop">
             <div class="clear"></div>
             <nav class="fixed-header">
-                <div class="site-title visible-title"><a href="http://localhost/SolidServ-WebSite/"><img class="logo" src="http://localhost/SolidServ-WebSite/assets/LogoBrute.png"><img class="text" src="http://localhost/SolidServ-WebSite/assets/TextBrute.png"></a></div>
+                <div class="site-title visible-title"><a href="#"><img class="logo" src="../assets/LogoBrute.png"><img class="text" src="../assets/TextBrute.png"></a></div>
                 <ul class="">
-                    <li class=""><a href="http://localhost/SolidServ-WebSite/">Accueil</a></li>
+                    <li class=""><a href="../">Accueil</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Hébergement
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="http://localhost/SolidServ-WebSite/vps.php">VPS</a>
-                            <a class="dropdown-item" href="http://localhost/SolidServ-WebSite/siteweb.php">Site Web</a>
-                            <a class="dropdown-item" href="http://localhost/SolidServ-WebSite/minecraft.php">Minecraft</a>
-                            <a class="dropdown-item" href="http://localhost/SolidServ-WebSite/fivem.php">Five M</a>
-                            <a class="dropdown-item" href="http://localhost/SolidServ-WebSite/stockage.php">Stockage</a>
+                            <a class="dropdown-item" href="../vps.php">VPS</a>
+                            <a class="dropdown-item" href="../siteweb.php">Site Web</a>
+                            <a class="dropdown-item" href="../minecraft.php">Minecraft</a>
+                            <a class="dropdown-item" href="../fivem.php">Five M</a>
+                            <a class="dropdown-item" href="../stockage.php">Stockage</a>
                         </div>
                     </li>
-                    <li><a href="http://localhost/SolidServ-WebSite/actu.php">Actualité</a></li><li><a href="http://localhost/SolidServ-WebSite/support.php">Support</a></li><li id="li-espace" class="null"><a class="a-espace" href="login.php">Espace client</a></li><li class="null"><a class="a-shop" href="cart.php?a=view"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="../actu.php">Actualité</a></li><li><a href="../support.php">Support</a></li><li id="li-espace" class="null"><a class="a-espace" href="login.php">Espace client</a></li><li class="null"><a class="a-shop" href="cart.php?a=view"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </nav>
         </header>

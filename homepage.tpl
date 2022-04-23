@@ -1,3 +1,3 @@
 <script>
-    window.location.replace("https://SolidServ.xyz/");
+    window.location.replace("../");
 </script>

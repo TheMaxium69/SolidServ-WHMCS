@@ -278,7 +278,7 @@
                 <div class="card mb-4">
                     <div class="card-body p-4">
                         <h3 class="card-title">{lang key='emailMarketing.joinOurMailingList'}</h3>
-                        <p>{$marketingEmailOptInMessage}</p>
+                        <p>Nous aimerions vous envoyer occasionnellement des nouvelles, des informations et des offres spéciales par e-mail. Choisissez ci-dessous si vous souhaitez rejoindre notre liste de diffusion. Vous pouvez vous désinscrire à tout moment</p>
                         <input type="checkbox" name="marketingoptin" value="1"{if $marketingEmailOptIn} checked{/if} class="no-icheck toggle-switch-success" data-size="small" data-on-text="{lang key='yes'}" data-off-text="{lang key='no'}">
                     </div>
                 </div>

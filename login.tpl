@@ -42,19 +42,19 @@
                 {include file="$template/includes/captcha.tpl"}
             {/if}
             <div class="float-left">
-                <button id="login" type="submit" class="btn btn-primary{$captcha->getButtonClass($captchaForm)}">
+                <button style="font-size: 10px" id="login" type="submit" class="tyrobutton{$captcha->getButtonClass($captchaForm)}">
                     {lang key='loginbutton'}
                 </button>
             </div>
             <div class="text-right">
-                <label>
-                    <input type="checkbox" class="form-check-input" name="rememberme" />
+                <label style="font-size: 13px;">
+                    <input style="margin-left: -1.5rem;" type="checkbox" class="form-check-input" name="rememberme" />
                     {lang key='loginrememberme'}
                 </label>
             </div>
         </div>
         <div class="card-footer px-md-5">
-            <small>{lang key='userLogin.notRegistered'}</small>
+            <small>Vous n'avez pas de comptes ?</small>
             <a href="{$WEB_ROOT}/register.php" class="small font-weight-bold">{lang key='userLogin.createAccount'}</a>
         </div>
     </div>

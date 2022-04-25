@@ -23,7 +23,8 @@
             <div class="site-title visible-title"><a href="../"><img class="logo" src="../assets/LogoBrute.png"><img class="text" src="../assets/TextBrute.png"></a></div>
             <ul class="">
 
-                <li class="nav-active"><a href="./">Accueil</a></li>                    <li class="nav-item dropdown ">
+                <li><a href="./">Accueil</a></li>
+                <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Hébergement                        </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -55,7 +56,7 @@
 
         <nav>
             <ul>
-                <li class="nav-active"><a href="./">Accueil</a></li>
+                <li><a href="./">Accueil</a></li>
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="../" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Hébergement                        </a>

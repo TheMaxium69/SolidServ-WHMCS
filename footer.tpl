@@ -25,7 +25,7 @@
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <a class="dropdown-item" href="../vps.php">VPS</a>
-                                <a class="dropdown-item" href="../siteweb.php">Site Web</a>
+{*                                <a class="dropdown-item" href="../siteweb.php">Site Web</a>*}
                                 <a class="dropdown-item" href="../minecraft.php">Minecraft</a>
                                 <a class="dropdown-item" href="../fivem.php">Five M</a>
                             </div>

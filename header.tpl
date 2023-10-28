@@ -28,8 +28,8 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Hébergement                        </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../vps.php">VPS</a>
-                        <a class="dropdown-item" href="../siteweb.php">Site Web</a>
+                        <a class="dropdown-item" href="../vps.php">VPS</a><!--
+                        <a class="dropdown-item" href="../siteweb.php">Site Web</a>-->
                         <a class="dropdown-item" href="../minecraft.php">Minecraft</a>
                         <a class="dropdown-item" href="../fivem.php">Five M</a><!--
                             <a class="dropdown-item" href="stockage.php">Stockage</a>-->
